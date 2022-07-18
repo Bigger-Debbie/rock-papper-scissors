@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPS</title>
+    <title >R.P.S</title>
+    <Script src="script.js"></Script>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    <Script src="script.js"></Script>
+    <div id="play-header">
+        <p id="cpu-choice">COMPUTERS CHOICE: WAITING...</p>
+        <button onclick="onClick()" id="play-btn">PLAY</button>
+    </div>
+    <div id="choice-area">
+        <p>YOUR CHOICE: <span id="player-choice">WAITING...</span></p>
+        <div id="button-group">
+            <button  value="rock">ROCK</button>
+            <button value="paper">PAPER</button>
+            <button  value="scissors">SCISSORS</button>
+        </div>
+    </div>
 </body>
 </html>
