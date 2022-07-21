@@ -5,22 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title >R.P.S</title>
-    <Script src="script.js"></Script>
+    
     <link rel="stylesheet" href="styles.css">
     
 </head>
 <body>
-    <div id="play-header">
-        <p id="cpu-choice">COMPUTERS CHOICE: WAITING...</p>
-        <button onclick="onClick()" id="play-btn">PLAY</button>
-    </div>
-    <div id="choice-area">
-        <p>YOUR CHOICE: <span id="player-choice">WAITING...</span></p>
-        <div id="button-group">
-            <button  value="rock">ROCK</button>
-            <button value="paper">PAPER</button>
-            <button  value="scissors">SCISSORS</button>
+    <div id="main-wrapper">
+        <div id="play-header">
+            <p id="cpu-choice">COMPUTERS CHOICE: <span id="cpuchoice">WAITING...</span></p>
+            <button onclick="onPlayClick()" id="play-btn">PLAY</button>
+        </div>
+        <div id="choice-area">
+            <p>YOUR CHOICE: <span id="player-choice">WAITING...</span></p>
+            <div id="wrapper">
+                <button class="choice-btn" id="rock" onclick="rockClick()">ROCK</button>
+                <button class="choice-btn" id="paper" onclick="onChoiceClick()">PAPER</button>
+                <button class="choice-btn" id="scissors" onclick="onChoiceClick()">SCISSORS</button>
+            </div>
+        </div>
+        <div id="win-loss-area">
+            <h1 id="winner">WINNER</h1>
+            <h1 id="looser">LOOSER</h1>
         </div>
     </div>
+    
+    <Script src="script.js"></Script>
 </body>
-</html>
+</html> 

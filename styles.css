@@ -30,14 +30,32 @@ div {
 }
 
 #play-btn {
-    width: 250px;
+    width: 275px;
 }
 
-#play-btn:focus {
-    background: rgb(87, 86, 86);
-}
-
-#button-group {
+#wrapper {
     flex-direction: row;
-    gap: 20px;
+    gap: 38px;
+}
+
+#win-loss-area {
+    flex-direction: row;
+}
+
+#winner {
+    display: none;
+}
+
+#looser {
+    display: none;
+}
+
+#main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid aqua;
+    height: 500px;
+    margin-top: 25%;
 }
