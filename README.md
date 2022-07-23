@@ -2,6 +2,6 @@
 
 Practice javascript rock paper scissors game
 
-Its ya boi, back at it again with the practice content. Not sure how this will turn out but stick around and you may eventually find out....
+Its ya boi, back at it again with the practice content. turned out decent... not gonna put to much time into this project. Was just to learn.
 
     - Bigger Deborah

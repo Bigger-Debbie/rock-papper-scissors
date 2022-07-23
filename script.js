@@ -34,6 +34,7 @@ function rockClick() {
     document.getElementById("player-choice").innerText = player.toUpperCase();
     
     logic(player, computer);
+    document.getElementById("replay-btn").style.display = "flex";
 }
 
 //Paper button is clicked
@@ -47,6 +48,7 @@ function paperClick() {
     document.getElementById("player-choice").innerText = player.toUpperCase();
     
     logic(player, computer);
+    document.getElementById("replay-btn").style.display = "flex";
 }
 
 //Scissors button is clicked
@@ -60,6 +62,7 @@ function scissorsClick() {
     document.getElementById("player-choice").innerText = player.toUpperCase();
     
     logic(player, computer);
+    document.getElementById("replay-btn").style.display = "flex";
 }
 
 //Game logic
@@ -81,4 +84,8 @@ function disableChoice() {
     document.getElementById("rock").disabled = 'true';
     document.getElementById("paper").disabled = 'true';
     document.getElementById("scissors").disabled = 'true';
+}
+
+function replay() {
+    location.reload();
 }
